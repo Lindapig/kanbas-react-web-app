@@ -1,52 +1,72 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+
+</head>
 
 <body>
     <table width="100%">
         <tbody>
             <tr>
                 <td valign="top">
-                    <ul>
-                        <li><a href="/Kanbas/Account/Navigation/index.html">
-                                Account</a></li>
+                    <ul class="wd-kanbas-navigation">
+                        <li><a href="/Kanbas/Account/Profile/screen.html">
+                                <i class="fa fa-user"></i>Account</a></li>
                         <li>
-                            <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+                            <a href="/Kanbas/Dashboard/screen.html">
+                                <i class="fa fa-tachometer-alt"></i> Dashboard</a>
+                        </li>
+                        <li class="wd-active">
+                            <a href="/Kanbas/Courses/Home/screen.html">
+                                <i class="fa fa-book"></i>Courses</a>
                         </li>
                         <li>
-                            <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                            <a href="/Kanbas/Calendar/index.html"><i class="fa fa-calendar"></i> Calendar</a>
                         </li>
-                        <li>
-                            <a href="/Kanbas/Calendar/index.html">Calendar</a>
-                        </li>
-                        <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                        <li><a href="/Kanbas/Inbox/index.html">History</a></li>
-                        <li><a href="/Kanbas/Inbox/index.html">Studio</a></li>
-                        <li><a href="/Kanbas/Inbox/index.html">Commons</a></li>
-                        <li><a href="/Kanbas/Inbox/index.html">Help</a></li>
+                        <li><a href="/Kanbas/Inbox/index.html">
+                                <i class="fa fa-inbox"></i>Inbox</a></li>
+                        <li><a href="/Kanbas/Inbox/index.html">
+                                <i class="fa fa-clock"></i>History</a></li>
+                        <li><a href="/Kanbas/Inbox/index.html">
+                                <i class="fa fa-tv"></i>Studio</a></li>
+                        <li><a href="/Kanbas/Inbox/index.html">
+                                <i class="fa fa-sync"></i>Commons</a></li>
+                        <li><a href="/Kanbas/Inbox/index.html">
+                                <i class="fa fa-question-circle"></i>Help</a></li>
                     </ul>
                 </td>
                 <td valign="top">
-                    <ul>
+                    <ul class="wd-navigation">
                         <li>
                             <a href="/Kanbas/Courses/Home/screen.html">
                                 Home</a>
                         </li>
                         <li><a href="/Kanbas/Courses/Modules/screen.html">
                                 Modules</a></li>
-                        <li><a href="/Kanbas/Courses/Piazza/index.html">
+                        <li><a href="http://piazza.com">
                                 Piazza</a></li>
-                        <li><a href="/Kanbas/Courses/Grades/screen.html">
-                                Grades</a></li>
-                        <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                                Assignments</a></li>
+                        <li><a href="#">Zoom</a></li>
+                        <li class="wd-active">
+                            <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                        </li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
                     </ul>
                 </td>
                 <td valign="top">
                     <table width="100%">
                         <tbody>
                             <tr>
-                                <td><input placeholder="Search for Assignments"></td>
+                                <td><input class="form-control" placeholder="Search for Assignments"></td>
                                 <td>
                                     <button>+ Group</button>
                                     <button>+ Assignment</button>
@@ -60,7 +80,53 @@
                         </tbody>
                     </table>
                     <ul>
-                        <li>Assignments
+                        <li>
+                            <ul class="list-group wd-modules">
+                                <li class="list-group-item">
+                                    <div>
+                                        <i class="fa fa-ellipsis-v"></i>
+                                        Assignments
+                                        <span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                            <i class="fa fa-plus ms-2"></i>
+                                            <i class="fa fa-ellipsis-v ms-2"></i>
+                                        </span>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <i class="fa fa-ellipsis-v"></i> A1 SETUP
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa-ellipsis-v"></i> A2 HTML
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa-ellipsis-v"></i> A3 CSS
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa-ellipsis-v"></i> A4 BOOTSTRAP
+                                            <span class="float-end">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <i class="fa fa-ellipsis-v ms-2"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                            <!--
                             <ul>
                                 <li>
                                     <a href="/Kanbas/Courses/Assignments/Editor/screen.html">A1</a><br />
@@ -100,12 +166,15 @@
                             </ul>
                         </li>
                         <li>Project</li>
+                        -->
                     </ul>
                 </td>
             </tr>
         </tbody>
     </table>
+
+
 </body>
-</head>
+
 
 </html>
